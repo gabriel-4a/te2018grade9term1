@@ -8,7 +8,7 @@ console.log("*** Problem 1: R-rated ***");
 let age = READLINE.question("Enter your age: ");
 let withAdult = READLINE.question("Are you with an adult? (yes or no): ");
 
-
+gfbj
 // **** Problem 2: Umbrella ****
 // You should bring an umbrella when you travel, but only if it is raining.
 // However, if it is thunderstorming, you should not bring an umbrella since
