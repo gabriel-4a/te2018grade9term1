@@ -1,3 +1,4 @@
+
 // Author: FirstName lastName
 
 /******************************************************************************
@@ -9,7 +10,7 @@
   tampering!
 *******************************************************************************/
 
-const READLINE = require("READLINE-sync");
+//const READLINE = require("READLINE-sync");
 
 /******************************************************************************
                                 global variables
@@ -27,7 +28,7 @@ const READLINE = require("READLINE-sync");
   not (false).
 *******************************************************************************/
 
-let contacts; 
+let contacts;
 let quit;
 
 /******************************************************************************
@@ -38,9 +39,9 @@ let quit;
 *******************************************************************************/
 
 function printGreeting() {
-
+  console.log('Hell User. Welcome to Smart Contacts 1.0');
 }
-
+printGreeting();
 /******************************************************************************
                                   setupApp()
 
@@ -50,9 +51,10 @@ function printGreeting() {
 *******************************************************************************/
 
 function setup() {
-
+  contacts = [];
 }
-
+setup();
+console.log(contacts)
 /******************************************************************************
                                 getNameInput()
 
@@ -63,9 +65,9 @@ function setup() {
 *******************************************************************************/
 
 function getNameInput() {
-
+let contactName = READLINE.question('Please enter a contact name');
+console.log(typeof 3);
 }
-
 /******************************************************************************
                                 checkNumber()
 
@@ -310,10 +312,7 @@ function displayMainMenu() {
        an endless loop.
     4) Outside of the loop, print a goodbye message.
 *******************************************************************************/
-
 function run() {
 
-}
-
-// Run the program!
+// the program!
 run();

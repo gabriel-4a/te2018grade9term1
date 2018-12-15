@@ -7,7 +7,7 @@ let player = {
   intellect: 6,
   strength: 4,
   charm: 5,
-  weapon: "fists",
+  weapon: "pocket knife",
   item: "flashlight",
 };
 
@@ -24,7 +24,7 @@ if(enterHouse == "y" || enterHouse == "yes") {
 
 } else {
   player.intellect++;
-  console.log(`${player.name} decides not to open the door. However...`);
+  console.log(`${player.name} decides not to open the door.`);
   // continue the story
 
 }

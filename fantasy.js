@@ -2,13 +2,13 @@
 const READLINE = require("readline-sync");
 
 // global variables
-let firstName;
-let lastName;
-let momMaidenName;
-let cityBorn;
-let dreamCar;
-let street;
-let fantasyName;
+let firstName;Gabriel
+let lastName;Conally
+let momMaidenName;Edwards
+let cityBorn;Berkley, California
+let dreamCar;MercedezBenzGClass
+let street;MarinaBlvd
+let fantasyName;Zachary
 
 /******************************************************************************
                                   getNewFirstName()
@@ -17,11 +17,15 @@ let fantasyName;
   first 3 letters of their real first name and the first 2 letters of their
   real last name.
 *******************************************************************************/
-
-function getNewFirstName() {
-
+// Funtion 1: Returns the user's new first name.
+function getNewFirstName(fName, lName) {
+  let first3ofFirstName = fName.substing(0,3);
+  let first2ofLastName = lName.substring(0,2);
+  return first3ofFirstName + first2ofLastName;
 }
+getNewFirstName(firstName, lastName);
 
+console.log(getNewFirst)
 /******************************************************************************
                                   getNewLastName()
 
@@ -29,22 +33,30 @@ function getNewFirstName() {
   first 2 letters of their mom's maiden name and the first 3 letters of the
   city where they were born.
 *******************************************************************************/
-
-function getNewLastName() {
-
+// Function 2: Returns the user's new last name
+function getNewLastName(momMaidenName, cityBorn) {
+  let first2ofMomMaidenName = momMaidenName.substring(0,3);
+  let first3ofCityBorn = cityBorn.substring(0,4);
+  return first2ofMomMaidenName + first3first3ofCityBorn;
 }
+getNewLastName(momMaidenName, cityBorn);
 
+console.log(getNewLastName)
 /******************************************************************************
                                   getTitle()
 
-  This function returns the user's title. To do so, concatenate the last three
+  This function returns the user's title. To do so, concatenate the last 3
   letters of their real last name, reversed, and the model of their dream car.
 *******************************************************************************/
-
-function getTitle() {
-
+// Function 3: Returns the user's title
+function getTitle(lname, Gclass) {
+  let last3ofLastNameReversed = lName.substring(3,-1);
+  let modelofDreamCar = dreamCar.substring(13,18);
+  return last3ofLastNameReversed + modelofDreamCar;
 }
+getTitle(last3ofLastNameReversed, modelofDreamCar)
 
+console.log(getTitle)
 /******************************************************************************
                                   getHonorific()
 
@@ -52,10 +64,12 @@ function getTitle() {
   title, " of ", and the name of the street they live on.
 *******************************************************************************/
 
-function getHonorific() {
-
+function getHonorific(getTitle, street) {
+  return getTitle + street;
 }
+getHonorific(getTitle, street)
 
+console.log(getHonorific)
 /******************************************************************************
                                      run()
 
@@ -66,9 +80,9 @@ function getHonorific() {
   to see.
 *******************************************************************************/
 
-function run() {
+function run(getNewFirstName, getNewLastName, getTitle, getHonorific) {
 
 }
 
 // Run the program!
-run();
+run(getNewFirstName, getNewLastName, getTitle, getHonorific);
